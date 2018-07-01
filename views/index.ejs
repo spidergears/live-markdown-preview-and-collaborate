@@ -1,0 +1,23 @@
+<!-- views/pad.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Live Markdown</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+  </head>
+
+  <body class="container-fluid">
+    <section class="row">
+      <textarea class="col-md-6 full-height" id="md-pad">#Your markdown goes here...</textarea>
+      <div class="col-md-6 full-height" id="live-preview" />
+    </section>
+
+    <script src="/node_modules/showdown/dist/showdown.min.js"></script>
+    <script src="/node_modules/browserchannel/dist/bcsocket.js"></script>
+    <script src="/node_modules/share/webclient/share.uncompressed.js"></script>
+    <script src="/node_modules/share/webclient/textarea.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
